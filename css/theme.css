@@ -1,0 +1,109 @@
+:root {
+    --first-color: #111111;
+    --second-color: #fff;
+    --third-color: #c40000;
+    --fourth-color: #750000;
+    
+}
+
+body {
+    background: #5b0404;
+    color: var(--second-color);
+}
+
+.logo {
+    width: 13rem;
+    max-width: 100%;
+}
+
+.btn-primary {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #fdcd0d;
+    --bs-btn-border-color: #d2ff00;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #ffc700;
+    --bs-btn-hover-border-color: #ffff00;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #f7ff00;
+    --bs-btn-active-border-color: #fff100;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #eef500;
+    --bs-btn-disabled-border-color: #fbdf01;
+}
+
+.text-secondary {
+    color: var(--bs-btn-active-color) !important;
+}
+
+
+.time-post {
+    font-size: 0.7rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+}
+
+.card-post {
+    background: var(--third-color);
+    color: var(--second-color);
+}
+
+.img-post {
+    width: 30rem;
+    max-width: 100%;
+}
+
+.page.active {
+    color: var(--second-color) !important;
+    background: var(--third-color);
+}
+
+.btn-info {
+    background-color: var(--third-color);
+    border-color: var(--third-color) !important;
+    color: var(--second-color);
+}
+
+.btn-info:hover {
+    background-color: var(--fourth-color);
+}
+
+.teks-berjaalan {
+    border-bottom: 1px dashed var(--third-color);
+    padding: 0.3rem;
+    margin-bottom: 0.9rem;
+}
+
+.teks-berjaalan h1, .teks-berjaalan h2, .teks-berjaalan h3, .teks-berjaalan h4, .teks-berjaalan h5, .teks-berjaalan h6, .teks-berjaalan p, .teks-berjaalan strong{
+    padding: 0;
+    margin: 0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+
+.copyright {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+    and (orientation: portrait) {
+       .title-home {
+        font-size: 1rem;
+       }
+
+       .logo {
+        width: 9rem;
+        max-width: 100%;
+       }
+
+       .search-bar {
+        width: 10rem;
+        max-width: 100%;
+       }
+}
